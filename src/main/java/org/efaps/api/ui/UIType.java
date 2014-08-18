@@ -18,11 +18,26 @@
  * Last Changed By: $Author$
  */
 
+
+package org.efaps.api.ui;
+
+
 /**
- * Interfaces used for the UserInterface interactions of esjp and
- * representation for the User.
+ * UIType definitions used by the xml CI-Items.
  *
  * @author The eFaps Team
  * @version $Id$
  */
-package org.efaps.api.ui;
+public enum UIType
+{
+    /** Default.*/
+    DEFAULT,
+    /** Render a button.*/
+    BUTTON,
+    /** Render CheckBox (applies for Booleans).*/
+    CHECKBOX,
+    /** A raw unformatted snipplet from the underlying field*/
+    SNIPPLET,
+    /** Render a DropDownBox. */
+    DROPDOWN;
+}

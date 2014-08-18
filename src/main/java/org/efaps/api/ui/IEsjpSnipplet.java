@@ -18,11 +18,35 @@
  * Last Changed By: $Author$
  */
 
+package org.efaps.api.ui;
+
+import java.io.Serializable;
+
+import org.efaps.util.EFapsException;
+
 /**
- * Interfaces used for the UserInterface interactions of esjp and
- * representation for the User.
+ * ESJP snipplet interface.
  *
  * @author The eFaps Team
  * @version $Id$
  */
-package org.efaps.api.ui;
+public interface IEsjpSnipplet
+    extends Serializable
+{
+
+    /**
+     * A Html Snipplet for UserInterface.
+     * @return the html snipplet to be presented in the UserInterface
+     * @throws EFapsException on error
+     */
+    CharSequence getHtmlSnipplet()
+        throws EFapsException;
+
+    /**
+     * The visible status.
+     * @return true is visible
+     * @throws EFapsException on error
+     */
+    boolean isVisible()
+        throws EFapsException;
+}
