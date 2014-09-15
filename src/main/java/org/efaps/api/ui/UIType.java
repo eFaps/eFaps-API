@@ -34,8 +34,10 @@ public enum UIType
     DEFAULT,
     /** Render a button.*/
     BUTTON,
-    /** Render CheckBox (applies for Booleans).*/
+    /** Render CheckBox.*/
     CHECKBOX,
+    /** Render Radio Buttons.*/
+    RADIO,
     /** A raw unformatted snipplet from the underlying field*/
     SNIPPLET,
     /** Render a DropDownBox. */
