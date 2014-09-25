@@ -20,6 +20,8 @@
 
 package org.efaps.api.ui;
 
+import java.io.Serializable;
+
 /**
  * TODO comment!
  *
@@ -27,6 +29,7 @@ package org.efaps.api.ui;
  * @version $Id$
  */
 public interface IOption
+    extends Serializable
 {
 
     /**
