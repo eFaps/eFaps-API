@@ -27,7 +27,7 @@
     <parent>
         <groupId>org.efaps</groupId>
         <artifactId>efaps-parent</artifactId>
-        <version>3.2.0</version>
+        <version>3.2.1-SNAPSHOT</version>
     </parent>
     <packaging>jar</packaging>
     <artifactId>efaps-api</artifactId>
@@ -75,7 +75,7 @@
         <connection>scm:git:git://github.com/eFaps/eFaps-API.git</connection>
         <developerConnection>scm:git:git@github.com:eFaps/eFaps-API.git</developerConnection>
         <url>https://github.com/eFaps/eFaps-API/</url>
-        <tag>V3.2.0</tag>
+        <tag>HEAD</tag>
     </scm>
     <distributionManagement>
         <site>
@@ -98,7 +98,7 @@
         <dependency>
             <groupId>org.efaps</groupId>
             <artifactId>efaps-kernel</artifactId>
-            <version>3.2.0</version>
+            <version> 3.2.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>
