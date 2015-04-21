@@ -22,7 +22,7 @@ package org.efaps.api.ui;
 
 import java.io.Serializable;
 
-import org.efaps.util.EFapsException;
+import org.efaps.util.EFapsBaseException;
 
 /**
  * ESJP snipplet interface.
@@ -37,16 +37,16 @@ public interface IEsjpSnipplet
     /**
      * A Html Snipplet for UserInterface.
      * @return the html snipplet to be presented in the UserInterface
-     * @throws EFapsException on error
+     * @throws EFapsBaseException on error
      */
     CharSequence getHtmlSnipplet()
-        throws EFapsException;
+        throws EFapsBaseException;
 
     /**
      * The visible status.
      * @return true is visible
-     * @throws EFapsException on error
+     * @throws EFapsBaseException on error
      */
     boolean isVisible()
-        throws EFapsException;
+        throws EFapsBaseException;
 }
