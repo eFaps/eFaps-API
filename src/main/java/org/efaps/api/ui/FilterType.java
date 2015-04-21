@@ -35,5 +35,7 @@ public enum FilterType
     /** Filter presenting a picker list. */
     PICKLIST,
     /** Filter for Status Attributes. */
-    STATUS;
+    STATUS,
+    /** A Form is used as Filter. */
+    FORM;
 }
