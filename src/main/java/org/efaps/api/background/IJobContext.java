@@ -17,62 +17,36 @@
 package org.efaps.api.background;
 
 import java.io.Serializable;
+import java.util.Locale;
+import java.util.UUID;
 
 /**
- * The Interface IExecutionBridge.
+ * The Interface IJobContext.
  *
  * @author The eFaps Team
  */
-public interface IExecutionBridge
+public interface IJobContext
     extends Serializable
 {
 
     /**
-     * Gets the job name.
+     * Gets the user name.
      *
-     * @return the job name
+     * @return the user name
      */
-    String getJobName();
+    String getUserName();
 
     /**
-     * Checks if is stop.
+     * Gets the company id.
      *
-     * @return true, if is stop
+     * @return the company id
      */
-    boolean isStop();
+    UUID getCompanyUUID();
 
     /**
-     * Checks if is cancel.
+     * Gets the locale.
      *
-     * @return true, if is cancel
+     * @return the locale
      */
-    boolean isCancel();
-
-    /**
-     * Gets the progress.
-     *
-     * @return the progress
-     */
-    int getProgress();
-
-    /**
-     * Checks if is finished.
-     *
-     * @return true, if is finished
-     */
-    boolean isFinished();
-
-    /**
-     * Gets the context.
-     *
-     * @return the context
-     */
-    IJobContext getJobContext();
-
-    /**
-     * Gets the content.
-     *
-     * @return the content
-     */
-    Serializable getContent();
+    Locale getLocale();
 }
