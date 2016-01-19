@@ -107,27 +107,18 @@
                 <configuration>
                     <markGenerated>true</markGenerated>
                     <args>
-            <arg>-XenumValue</arg>
-        </args>
-        <plugins>
-            <plugin>
-                <groupId>org.jvnet.jaxb2_commons</groupId>
-                <artifactId>jaxb2-basics</artifactId>
-                <version>0.11.0</version>
-            </plugin>
-        </plugins>
+                        <arg>-Xinheritance</arg>
+                    </args>
+                    <plugins>
+                        <plugin>
+                            <groupId>org.jvnet.jaxb2_commons</groupId>
+                            <artifactId>jaxb2-basics</artifactId>
+                            <version>0.11.0</version>
+                        </plugin>
+                    </plugins>
                 </configuration>
             </plugin>
         </plugins>
-
-
     </build>
-    <dependencies>
-        <dependency>
-            <groupId>org.jvnet.jaxb2_commons</groupId>
-                <artifactId>jaxb2-basics</artifactId>
-                <version>0.11.0</version>
-        </dependency>
-    </dependencies>
 </project>
 
