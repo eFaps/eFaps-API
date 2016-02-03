@@ -118,6 +118,13 @@
                     </plugins>
                 </configuration>
             </plugin>
+             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <configuration>
+                    <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>

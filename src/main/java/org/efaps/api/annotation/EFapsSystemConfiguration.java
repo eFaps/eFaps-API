@@ -36,9 +36,8 @@ import java.lang.annotation.Target;
 @Inherited
 public @interface EFapsSystemConfiguration
 {
-
     /**
-     * UUID of the SustemConfiguration the class belongs to.
+     * Value.
      *
      * @return the string
      */
