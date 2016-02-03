@@ -15,8 +15,8 @@
  */
 
 /**
- * TODO comment!
+ * Annotations used by eFaps.
  *
  * @author The eFaps Team
  */
-package org.efaps.util;
+package org.efaps.api.annotation;

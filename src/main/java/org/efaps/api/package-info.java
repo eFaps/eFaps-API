@@ -15,8 +15,8 @@
  */
 
 /**
- * TODO comment!
+ * API classes.
  *
  * @author The eFaps Team
  */
-package org.efaps.util;
+package org.efaps.api;

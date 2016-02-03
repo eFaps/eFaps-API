@@ -1,5 +1,5 @@
 /*
- * Copyright 2003 - 2015 The eFaps Team
+ * Copyright 2003 - 2016 The eFaps Team
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,8 +32,10 @@ public class EFapsBaseException
     private static final long serialVersionUID = 1L;
 
     /**
-     * @param _message
-     * @param _cause
+     * Instantiates a new eFaps Base exception.
+     *
+     * @param _message the message
+     * @param _cause the cause
      */
     public EFapsBaseException(final String _message,
                               final Throwable _cause)
@@ -42,7 +44,9 @@ public class EFapsBaseException
     }
 
     /**
-     * @param _string
+     * Instantiates a new eFaps Base exception.
+     *
+     * @param _string the string
      */
     public EFapsBaseException(final String _string)
     {
