@@ -24,26 +24,36 @@ import org.efaps.util.EFapsBaseException;
 /**
  * ESJP snipplet interface.
  *
- * @author The eFaps Team
- * @version $Id$
+ * @author The eFaps Team @version $Id$
  */
 public interface IEsjpSnipplet
     extends Serializable
 {
 
     /**
-     * A Html Snipplet for UserInterface.
-     * @return the html snipplet to be presented in the UserInterface
-     * @throws EFapsBaseException on error
+     * A Html Snipplet for UserInterface. @return the html snipplet to be
+     * presented in the UserInterface @throws EFapsBaseException on error
      */
     CharSequence getHtmlSnipplet()
         throws EFapsBaseException;
 
     /**
-     * The visible status.
-     * @return true is visible
-     * @throws EFapsBaseException on error
+     * The visible status. @return true is visible @throws EFapsBaseException on
+     * error
+     *
+     * @return true, if is visible
+     * @throws EFapsBaseException the e faps base exception
      */
     boolean isVisible()
         throws EFapsBaseException;
+
+    /**
+     * Gets the identifier.
+     *
+     * @return the identifier
+     * @throws EFapsBaseException the e faps base exception
+     */
+    String getIdentifier()
+        throws EFapsBaseException;
+
 }
