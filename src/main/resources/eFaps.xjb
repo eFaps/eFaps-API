@@ -18,5 +18,17 @@
              <jaxb:typesafeEnumClass name="UITableFieldProperty" />
             <inheritance:implements> org.efaps.api.IEnumValue</inheritance:implements>
         </jaxb:bindings>
+         <jaxb:bindings node="//xs:simpleType[@name='property_formfield_enum']">
+             <jaxb:typesafeEnumClass name="UIFormFieldProperty" />
+            <inheritance:implements> org.efaps.api.IEnumValue</inheritance:implements>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:simpleType[@name='property_ui-command_enum']">
+             <jaxb:typesafeEnumClass name="UICommandProperty" />
+            <inheritance:implements> org.efaps.api.IEnumValue</inheritance:implements>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:simpleType[@name='property_ui-form_enum']">
+             <jaxb:typesafeEnumClass name="UIFormProperty" />
+            <inheritance:implements> org.efaps.api.IEnumValue</inheritance:implements>
+        </jaxb:bindings>
     </jaxb:bindings>
 </jaxb:bindings>
