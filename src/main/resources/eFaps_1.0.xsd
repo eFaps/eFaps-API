@@ -451,7 +451,6 @@
         <xsd:sequence>
             <xsd:element name="uuid" type="xsd:string" maxOccurs="1" minOccurs="1" nillable="false" />
             <xsd:element name="file-application" type="xsd:string" maxOccurs="1" minOccurs="0" />
-            <xsd:element name="file-revision" type="xsd:string" maxOccurs="1" minOccurs="0" />
             <xsd:element name="description" type="xsd:string" maxOccurs="1" minOccurs="0" />
             <xsd:element name="specification" type="xsd:string" maxOccurs="1" minOccurs="0" />
         </xsd:sequence>
