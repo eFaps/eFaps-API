@@ -1200,7 +1200,6 @@
             <xsd:enumeration value="CmdTargetField" />
             <xsd:enumeration value="CmdRenderButton" />
             <xsd:enumeration value="Classification" />
-            <xsd:enumeration value="ClassNameUI" />
             <xsd:enumeration value="Columns" />
             <xsd:enumeration value="Collapsed" />
             <xsd:enumeration value="FilterType" />
@@ -1269,7 +1268,6 @@
                 <xsd:enumeration value="CmdTargetField" />
                 <xsd:enumeration value="CmdRenderButton" />
                 <xsd:enumeration value="Classification" />
-                <xsd:enumeration value="ClassNameUI" />
                 <xsd:enumeration value="Columns" />
                 <xsd:enumeration value="Collapsed" />
                 <xsd:enumeration value="ColSpan" />
