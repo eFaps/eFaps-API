@@ -32,7 +32,7 @@
         <jaxb:bindings node="//xs:simpleType[@name='property_ui-command_enum']">
             <inheritance:implements> org.efaps.api.IEnumValue</inheritance:implements>
         </jaxb:bindings>
-        <jaxb:bindings node="//xs:simpleType[@name='UITableFieldProperty']">
+        <jaxb:bindings node="//xs:simpleType[@name='property_tablefield_enum']">
              <jaxb:typesafeEnumClass name="UITableFieldProperty" />
             <inheritance:implements> org.efaps.api.IEnumValue</inheritance:implements>
         </jaxb:bindings>

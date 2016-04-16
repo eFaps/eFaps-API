@@ -1183,14 +1183,14 @@
             <xsd:extension base="xsd:string">
                 <xsd:attribute name="name" use="required">
                     <xsd:simpleType>
-                        <xsd:union memberTypes="xsd:string eFaps:UITableFieldProperty"></xsd:union>
+                        <xsd:union memberTypes="xsd:string eFaps:property_tablefield_enum"></xsd:union>
                     </xsd:simpleType>
                 </xsd:attribute>
             </xsd:extension>
         </xsd:simpleContent>
     </xsd:complexType>
 
-    <xsd:simpleType name="UITableFieldProperty">
+    <xsd:simpleType name="property_tablefield_enum">
         <xsd:restriction base="xsd:string">
             <xsd:enumeration value="Attribute" />
             <xsd:enumeration value="Align" />
@@ -1218,6 +1218,9 @@
             <xsd:enumeration value="ModeSearch" />
             <xsd:enumeration value="ModeView" />
             <xsd:enumeration value="MsgPhrase" />
+            <xsd:enumeration value="NumberMinimum"/>
+            <xsd:enumeration value="NumberMaximum"/>
+            <xsd:enumeration value="NumberStep"/>
             <xsd:enumeration value="Order" />
             <xsd:enumeration value="Phrase" />
             <xsd:enumeration value="Required" />
@@ -1287,6 +1290,9 @@
                 <xsd:enumeration value="ModeSearch" />
                 <xsd:enumeration value="ModeView" />
                 <xsd:enumeration value="MsgPhrase" />
+                <xsd:enumeration value="NumberMinimum"/>
+                <xsd:enumeration value="NumberMaximum"/>
+                <xsd:enumeration value="NumberStep"/>
                 <xsd:enumeration value="Order" />
                 <xsd:enumeration value="Phrase" />
                 <xsd:enumeration value="Required" />
