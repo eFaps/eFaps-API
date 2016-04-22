@@ -510,40 +510,7 @@
             <xsd:element name="name" type="xsd:string" maxOccurs="1" minOccurs="1" />
             <xsd:element name="type" maxOccurs="1" minOccurs="1">
                 <xsd:simpleType>
-                    <xsd:restriction base="xsd:string">
-                        <xsd:enumeration value="BitEnum" />
-                        <xsd:enumeration value="Boolean" />
-                        <xsd:enumeration value="Created" />
-                        <xsd:enumeration value="CreatorLink" />
-                        <xsd:enumeration value="CompanyLink" />
-                        <xsd:enumeration value="ConsortiumLink" />
-                        <xsd:enumeration value="Date" />
-                        <xsd:enumeration value="DateTime" />
-                        <xsd:enumeration value="Decimal" />
-                        <xsd:enumeration value="DecimalWithUoM" />
-                        <xsd:enumeration value="Enum" />
-                        <xsd:enumeration value="FormatedString" />
-                        <xsd:enumeration value="GroupLink" />
-                        <xsd:enumeration value="Integer" />
-                        <xsd:enumeration value="IntegerWithUoM" />
-                        <xsd:enumeration value="Jaxb" />
-                        <xsd:enumeration value="Link" />
-                        <xsd:enumeration value="LinkWithRanges" />
-                        <xsd:enumeration value="Long" />
-                        <xsd:enumeration value="Modified" />
-                        <xsd:enumeration value="ModifierLink" />
-                        <xsd:enumeration value="OID" />
-                        <xsd:enumeration value="Password" />
-                        <xsd:enumeration value="PersonLink" />
-                        <xsd:enumeration value="PolicyLink" />
-                        <xsd:enumeration value="Rate" />
-                        <xsd:enumeration value="Real" />
-                        <xsd:enumeration value="Status" />
-                        <xsd:enumeration value="String" />
-                        <xsd:enumeration value="StringWithUoM" />
-                        <xsd:enumeration value="Time" />
-                        <xsd:enumeration value="Type" />
-                    </xsd:restriction>
+                    <xsd:union memberTypes="eFaps:attribute_type_enum"></xsd:union>
                 </xsd:simpleType>
             </xsd:element>
             <xsd:element name="typelink" type="xsd:string" maxOccurs="1" minOccurs="0" />
@@ -557,6 +524,42 @@
             <xsd:element name="property" type="eFaps:property_attribute" maxOccurs="unbounded" minOccurs="0" />
         </xsd:sequence>
     </xsd:complexType>
+
+    <xsd:simpleType name="attribute_type_enum">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="BitEnum" />
+            <xsd:enumeration value="Boolean" />
+            <xsd:enumeration value="Created" />
+            <xsd:enumeration value="CreatorLink" />
+            <xsd:enumeration value="CompanyLink" />
+            <xsd:enumeration value="ConsortiumLink" />
+            <xsd:enumeration value="Date" />
+            <xsd:enumeration value="DateTime" />
+            <xsd:enumeration value="Decimal" />
+            <xsd:enumeration value="DecimalWithUoM" />
+            <xsd:enumeration value="Enum" />
+            <xsd:enumeration value="FormatedString" />
+            <xsd:enumeration value="GroupLink" />
+            <xsd:enumeration value="Integer" />
+            <xsd:enumeration value="IntegerWithUoM" />
+            <xsd:enumeration value="Jaxb" />
+            <xsd:enumeration value="Link" />
+            <xsd:enumeration value="LinkWithRanges" />
+            <xsd:enumeration value="Long" />
+            <xsd:enumeration value="Modified" />
+            <xsd:enumeration value="ModifierLink" />
+            <xsd:enumeration value="OID" />
+            <xsd:enumeration value="Password" />
+            <xsd:enumeration value="PersonLink" />
+            <xsd:enumeration value="Rate" />
+            <xsd:enumeration value="Real" />
+            <xsd:enumeration value="Status" />
+            <xsd:enumeration value="String" />
+            <xsd:enumeration value="StringWithUoM" />
+            <xsd:enumeration value="Time" />
+            <xsd:enumeration value="Type" />
+        </xsd:restriction>
+    </xsd:simpleType>
 
     <xsd:complexType name="attributeset">
         <xsd:sequence>
