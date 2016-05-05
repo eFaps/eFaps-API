@@ -755,15 +755,38 @@
                     <xsd:element name="purpose" type="eFaps:typePurpose" minOccurs="0" maxOccurs="1" />
                     <xsd:group ref="eFaps:attributeGroup" maxOccurs="unbounded" minOccurs="0" />
                     <xsd:element name="trigger" type="eFaps:trigger4Type" maxOccurs="unbounded" minOccurs="0" />
-                    <xsd:element name="property" type="eFaps:property_datamodel-type" maxOccurs="unbounded"
-                        minOccurs="0" />
+                    <xsd:element name="property" type="eFaps:property_datamodel-type" maxOccurs="unbounded" minOccurs="0" />
                     <xsd:element name="event-for" type="eFaps:event-for" minOccurs="0" maxOccurs="unbounded" />
                     <xsd:element name="store" type="eFaps:typeStore" minOccurs="0" maxOccurs="1" />
                     <xsd:element name="classifies" type="eFaps:typeClassifies" minOccurs="0" maxOccurs="1" />
+                    <xsd:element name="index" type="eFaps:index" minOccurs="0" maxOccurs="1" />
                 </xsd:sequence>
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
+
+    <xsd:complexType name="index">
+        <xsd:sequence>
+            <xsd:element name="field" type="eFaps:indexField" maxOccurs="unbounded" minOccurs="0" />
+        </xsd:sequence>
+        <xsd:attribute name="msgPhrase" type="xsd:string" use="required" />
+    </xsd:complexType>
+
+    <xsd:complexType name="indexField">
+        <xsd:attribute name="key" type="xsd:string" use="required"/>
+        <xsd:attribute name="select" type="xsd:string" use="required"/>
+        <xsd:attribute name="type" type="eFaps:indexFieldType" use="required"/>
+    </xsd:complexType>
+
+    <xsd:simpleType name="indexFieldType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="SEARCHSTRING" />
+            <xsd:enumeration value="SEARCHTEXT" />
+            <xsd:enumeration value="STORED" />
+            <xsd:enumeration value="STRING" />
+            <xsd:enumeration value="TEXT" />
+        </xsd:restriction>
+    </xsd:simpleType>
 
     <xsd:complexType name="definition_db-store">
         <xsd:complexContent>
