@@ -776,10 +776,13 @@
         <xsd:attribute name="key" type="xsd:string" use="required"/>
         <xsd:attribute name="select" type="xsd:string" use="required"/>
         <xsd:attribute name="type" type="eFaps:indexFieldType" use="required"/>
+        <xsd:attribute name="transform" type="xsd:string" use="optional" />
     </xsd:complexType>
 
     <xsd:simpleType name="indexFieldType">
         <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="LONG" />
+            <xsd:enumeration value="SEARCHLONG" />
             <xsd:enumeration value="SEARCHSTRING" />
             <xsd:enumeration value="SEARCHTEXT" />
             <xsd:enumeration value="STORED" />
