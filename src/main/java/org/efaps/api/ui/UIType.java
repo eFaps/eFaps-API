@@ -38,5 +38,7 @@ public enum UIType
     /** A raw unformatted snipplet from the underlying field.*/
     SNIPPLET,
     /** Render a DropDownBox. */
-    DROPDOWN;
+    DROPDOWN,
+    /** Render a number input. For Decimal required if the spinner are wanted. */
+    NUMBER;
 }
