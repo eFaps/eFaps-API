@@ -1029,7 +1029,6 @@
         <xsd:attribute name="character" use="optional">
             <xsd:simpleType>
                 <xsd:restriction base="xsd:string">
-                    <xsd:enumeration value="Chart" />
                     <xsd:enumeration value="Classification" />
                     <xsd:enumeration value="Command" />
                     <xsd:enumeration value="Group" />
