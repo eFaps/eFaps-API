@@ -1377,6 +1377,7 @@
     <xsd:simpleType name="property_ui-form_enum">
         <xsd:restriction base="xsd:string">
             <xsd:enumeration value="Weight" />
+            <xsd:enumeration value="MultiPart"/>
         </xsd:restriction>
     </xsd:simpleType>
 
