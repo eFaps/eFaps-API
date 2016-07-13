@@ -40,5 +40,7 @@ public enum UIType
     /** Render a DropDownBox. */
     DROPDOWN,
     /** Render a number input. For Decimal required if the spinner are wanted. */
-    NUMBER;
+    NUMBER,
+    /** Render a file upload inpout. */
+    UPLOAD;
 }
