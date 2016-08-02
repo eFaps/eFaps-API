@@ -1417,6 +1417,7 @@
             <xsd:enumeration value="TargetStructurBrowserField" />
             <xsd:enumeration value="TargetTableSortKey" />
             <xsd:enumeration value="TargetDeactivateDnD" />
+            <xsd:enumeration value="TargetTableType"/>
             <xsd:enumeration value="WindowHeight" />
             <xsd:enumeration value="WindowWidth" />
         </xsd:restriction>
