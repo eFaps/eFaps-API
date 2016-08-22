@@ -1327,6 +1327,7 @@
                 <xsd:enumeration value="Required" />
                 <xsd:enumeration value="Rows" />
                 <xsd:enumeration value="RowSpan" />
+                <xsd:enumeration value="RadioRowLength"/>
                 <xsd:enumeration value="Select" />
                 <xsd:enumeration value="SelectAlternateOID" />
                 <xsd:enumeration value="ShowTypeIcon" />
