@@ -41,5 +41,7 @@ public enum DateDefaultValues
     /** Integer day of month. */
     WITHDAYOFMONTH,
     /** like today will be evaluated.*/
-    LASTDAYOFMONTH;
+    LASTDAYOFMONTH,
+    /** Integer day of month. */
+    WITHDAYOFYEAR;
 }
