@@ -1171,6 +1171,15 @@
         </xsd:simpleContent>
     </xsd:complexType>
 
+    <xsd:complexType name="propertiesOverwrite">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="systemConfig" use="required" />
+                <xsd:attribute name="attribute" use="required" />
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
     <xsd:complexType name="property_attribute">
         <xsd:annotation>
             <xsd:documentation> Used to define properties on attribute</xsd:documentation>
@@ -1589,6 +1598,7 @@
 
     <xsd:complexType name="trigger4UI">
         <xsd:sequence>
+            <xsd:element name="propertiesOverwrite" type="eFaps:propertiesOverwrite" maxOccurs="1" minOccurs="0" />
             <xsd:element name="property" type="eFaps:property" maxOccurs="unbounded" minOccurs="0" />
         </xsd:sequence>
         <xsd:attribute name="name" type="xsd:string" use="required" />
