@@ -18,6 +18,7 @@
 
 package org.efaps.api.ui;
 
+import java.io.Serializable;
 
 /**
  * The Class IFilter.
@@ -25,6 +26,7 @@ package org.efaps.api.ui;
  * @author The eFaps Team
  */
 public interface IFilter
+    extends Serializable
 {
     /**
      * Gets the field id this filter belongs to.

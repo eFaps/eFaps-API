@@ -17,6 +17,7 @@
 
 package org.efaps.api.ui;
 
+import java.io.Serializable;
 import java.util.Collection;
 
 /**
@@ -25,7 +26,7 @@ import java.util.Collection;
  * @author The eFaps Team
  */
 public interface IFilterList
-    extends Collection<IFilter>
+    extends Serializable, Collection<IFilter>
 {
 
 }

@@ -17,21 +17,15 @@
 
 package org.efaps.api.ui;
 
+import java.util.Collection;
+
 /**
  * The Interface IListFilter.
  *
  * @author The eFaps Team
  */
 public interface IListFilter
-    extends IFilter
+    extends IFilter, Collection<IOption>
 {
-    /**
-     * Gets the values.
-     *
-     * @return the values
-     */
-    default Object[] getValues()
-    {
-        return new Object[] {};
-    }
+
 }
