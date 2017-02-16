@@ -1232,6 +1232,7 @@
         <xsd:restriction base="xsd:string">
             <xsd:enumeration value="Attribute" />
             <xsd:enumeration value="Align" />
+            <xsd:enumeration value="Aggregate"/>
             <xsd:enumeration value="CmdAppend" />
             <xsd:enumeration value="CmdIcon" />
             <xsd:enumeration value="CmdTargetField" />
