@@ -35,7 +35,7 @@ public interface IHelpProvider
      *
      * @param _cmdId the cmd id
      * @return true, if successful
-     * @throws EFapsBaseException the e faps base exception
+     * @throws EFapsBaseException the eFaps base exception
      */
     default boolean hasHelp(final Long _cmdId)
         throws EFapsBaseException
@@ -48,9 +48,32 @@ public interface IHelpProvider
      *
      * @param _cmdId the cmd id
      * @return the help
-     * @throws EFapsBaseException the e faps base exception
+     * @throws EFapsBaseException the eFaps base exception
      */
     CharSequence getHelp(Long _cmdId)
         throws EFapsBaseException;
 
+    /**
+     * Checks if is help admin.
+     *
+     * @return true, if is help admin
+     * @throws EFapsBaseException the eFaps base exception
+     */
+    default boolean isHelpAdmin()
+        throws EFapsBaseException
+    {
+        return false;
+    }
+
+    /**
+     * Checks if is help admin.
+     *
+     * @return true, if is help admin
+     * @throws EFapsBaseException the eFaps base exception
+     */
+    default boolean isEditMode()
+        throws EFapsBaseException
+    {
+        return false;
+    }
 }
