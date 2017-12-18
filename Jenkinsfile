@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        withMaven(maven: 'M3.5', mavenLocalRepo: '.repository') {
+        withMaven(maven: 'M3.5', mavenLocalRepo: '.repository', mavenSettingsConfig: 'eFaps-Maven-Settings') {
           sh 'mvn clean install'
         }
         
