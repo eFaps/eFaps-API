@@ -24,7 +24,7 @@ public interface IPivotProvider
 {
 
     /**
-     * Get a list of options, to be shown in the UserInterface.
+     * Get a list of datasources, to be shown in the UserInterface.
      *
      * @return list of IOption
      */
@@ -38,4 +38,26 @@ public interface IPivotProvider
      */
     CharSequence getJsonData(String _dataSource);
 
+    /**
+     * Get a list of datasources, to be shown in the UserInterface.
+     *
+     * @return list of IOption
+     */
+    List<IOption> getReports();
+
+    /**
+     *
+     * @param _reportName name of the report
+     * @param _pivotReport pivotReport representation
+     * @return OID/Key of the saved report
+     */
+    String save(String _reportName, String _pivotReport);
+
+    /**
+     * Gets the report.
+     *
+     * @param _reportKey the report key
+     * @return the report
+     */
+    CharSequence getReport(String _reportKey);
 }
