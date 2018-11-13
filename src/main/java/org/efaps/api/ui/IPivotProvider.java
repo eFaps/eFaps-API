@@ -60,4 +60,11 @@ public interface IPivotProvider
      * @return the report
      */
     CharSequence getReport(String _reportKey);
+
+    /**
+     * Delete.
+     *
+     * @param _reportKey the report key
+     */
+    void delete(String _reportKey);
 }
