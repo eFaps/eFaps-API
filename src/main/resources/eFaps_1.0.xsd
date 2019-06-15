@@ -527,6 +527,7 @@
 
     <xsd:simpleType name="attribute_type_enum">
         <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="AssociationLink" />
             <xsd:enumeration value="BitEnum" />
             <xsd:enumeration value="Boolean" />
             <xsd:enumeration value="Created" />
