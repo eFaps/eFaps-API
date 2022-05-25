@@ -1,5 +1,5 @@
 /*
- * Copyright 2003 - 2017 The eFaps Team
+ * Copyright 2003 - 2022 The eFaps Team
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,6 @@
  * limitations under the License.
  *
  */
-
 package org.efaps.api.ui;
 
 import java.util.ServiceLoader;
@@ -23,18 +22,12 @@ import javax.servlet.http.HttpSession;
 
 /**
  * Providers can be configured via {@link ServiceLoader}, i.e. by having a file
- * /META-INF/services/org.efaps.api.ui.ILoginProvider in the class path root, with each line containing the
- * full class name of an {@link ILoginProvider}.
+ * /META-INF/services/org.efaps.api.ui.ILogoutProvider in the class path root, with each line containing the
+ * full class name of an {@link ILogoutProvider}.
  *
  * The Interface ILogin.
  */
-public interface ILoginProvider
+public interface ILogoutProvider
 {
-    /**
-     * Login.
-     *
-     * @param _httpSession the http session
-     * @return the string
-     */
-    String login(HttpSession _httpSession);
+    String logoutUrl(final HttpSession _httpSession);
 }
