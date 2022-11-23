@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  Copyright 2003 - 2016 The eFaps Team
+  Copyright 2003 - 2022 The eFaps Team
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -16,8 +16,7 @@
   limitations under the License.
 
 -->
-<xsd:schema targetNamespace="http://www.efaps.org/xsd" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    xmlns:eFaps="http://www.efaps.org/xsd">
+<xsd:schema targetNamespace="http://www.efaps.org/xsd" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:eFaps="http://www.efaps.org/xsd">
 
     <!-- RootElements -->
     <xsd:element name="access-set">
@@ -25,8 +24,7 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_access-set" maxOccurs="unbounded"
-                            minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_access-set" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -38,8 +36,7 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_access-type" maxOccurs="unbounded"
-                            minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_access-type" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -51,8 +48,7 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_common-systemconfig"
-                            maxOccurs="unbounded" minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_common-systemconfig" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -64,8 +60,7 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_datamodel-dimension"
-                            maxOccurs="unbounded" minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_datamodel-dimension" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -77,8 +72,7 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_datamodel-statusgroup"
-                            maxOccurs="unbounded" minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_datamodel-statusgroup" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -90,8 +84,7 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_datamodel-sqltable" maxOccurs="unbounded"
-                            minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_datamodel-sqltable" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -103,8 +96,7 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_datamodel-type" maxOccurs="unbounded"
-                            minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_datamodel-type" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -115,8 +107,7 @@
     <xsd:element name="data-import">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="definition" type="eFaps:data-import-definition" maxOccurs="unbounded"
-                    minOccurs="1" />
+                <xsd:element name="definition" type="eFaps:data-import-definition" maxOccurs="unbounded" minOccurs="1" />
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -148,8 +139,8 @@
     <xsd:complexType name="data-import-type">
         <xsd:sequence>
             <xsd:element name="attribute" type="eFaps:data-import-attribute" minOccurs="0" maxOccurs="unbounded" />
-            <xsd:element name="classification" type="eFaps:data-import-classification" minOccurs="0"
-                maxOccurs="unbounded" />
+            <xsd:element name="classification" type="eFaps:data-import-classification" minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element name="attribute-set" type="eFaps:data-import-attribute-set" minOccurs="0" maxOccurs="unbounded" />
         </xsd:sequence>
         <xsd:attribute name="name" type="xsd:string" use="required" />
         <xsd:attribute name="column" type="xsd:string" use="optional" />
@@ -162,13 +153,21 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_msgphrase" maxOccurs="unbounded"
-                            minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_msgphrase" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
         </xsd:complexType>
     </xsd:element>
+
+    <xsd:complexType name="data-import-attribute-set">
+         <xsd:sequence>
+            <xsd:element name="property" type="eFaps:property" minOccurs="0" maxOccurs="unbounded" />
+        </xsd:sequence>
+        <xsd:attribute name="name" type="xsd:string" use="required" />
+        <xsd:attribute name="class" type="xsd:string" use="optional" />
+        <xsd:attribute name="validateClass" type="xsd:string" use="optional" />
+    </xsd:complexType>
 
     <xsd:complexType name="data-import-classification">
         <xsd:sequence>
@@ -200,8 +199,7 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_db-store" maxOccurs="unbounded"
-                            minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_db-store" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -214,8 +212,7 @@
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
                         <xsd:element name="bundle" type="eFaps:bundle" maxOccurs="1" minOccurs="1" />
-                        <xsd:element name="resource" type="eFaps:propertyResource" maxOccurs="unbounded"
-                            minOccurs="1" />
+                        <xsd:element name="resource" type="eFaps:propertyResource" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -242,8 +239,7 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_integration-webdav" maxOccurs="unbounded"
-                            minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_integration-webdav" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -255,8 +251,7 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_image" maxOccurs="unbounded"
-                            minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_image" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -268,8 +263,7 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_bpmimage" maxOccurs="unbounded"
-                            minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_bpmimage" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -282,8 +276,7 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_numbergenerator" maxOccurs="unbounded"
-                            minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_numbergenerator" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -295,8 +288,7 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_ui-command" maxOccurs="unbounded"
-                            minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_ui-command" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -308,8 +300,7 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_ui-form" maxOccurs="unbounded"
-                            minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_ui-form" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -320,8 +311,7 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_image" maxOccurs="unbounded"
-                            minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_image" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -333,8 +323,7 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_ui-menu" maxOccurs="unbounded"
-                            minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_ui-menu" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -346,8 +335,7 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_ui-search" maxOccurs="unbounded"
-                            minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_ui-search" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -359,8 +347,7 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_ui-table" maxOccurs="unbounded"
-                            minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_ui-table" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -372,8 +359,7 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_user-company" maxOccurs="unbounded"
-                            minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_user-company" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -385,8 +371,7 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_user-jaassystem" maxOccurs="unbounded"
-                            minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_user-jaassystem" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -398,8 +383,7 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_user-role" maxOccurs="unbounded"
-                            minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_user-role" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -411,8 +395,7 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_user-group" maxOccurs="unbounded"
-                            minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_user-group" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -425,8 +408,7 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_help-menu" maxOccurs="unbounded"
-                            minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_help-menu" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -438,8 +420,7 @@
             <xsd:complexContent>
                 <xsd:extension base="eFaps:AbstractBase">
                     <xsd:sequence>
-                        <xsd:element name="definition" type="eFaps:definition_image" maxOccurs="unbounded"
-                            minOccurs="1" />
+                        <xsd:element name="definition" type="eFaps:definition_image" maxOccurs="unbounded" minOccurs="1" />
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -459,8 +440,7 @@
     <xsd:complexType name="AbstractDefinition">
         <xsd:sequence>
             <xsd:element name="version-expression" type="xsd:string" maxOccurs="1" minOccurs="1" />
-            <xsd:element name="application-dependencies" type="eFaps:application-dependencies" maxOccurs="1"
-                minOccurs="0" />
+            <xsd:element name="application-dependencies" type="eFaps:application-dependencies" maxOccurs="1" minOccurs="0" />
             <xsd:element name="profiles" type="eFaps:profileType" maxOccurs="1" minOccurs="0" />
             <xsd:element name="name" type="xsd:string" maxOccurs="1" minOccurs="0" />
             <xsd:element name="parent" type="xsd:string" maxOccurs="1" minOccurs="0" />
@@ -674,8 +654,7 @@
             <xsd:extension base="eFaps:AbstractDefinition">
                 <xsd:sequence>
                     <xsd:element name="label" type="eFaps:msgphrase_label" maxOccurs="unbounded" minOccurs="0"></xsd:element>
-                    <xsd:element name="argument" type="eFaps:msgphrase_argument" maxOccurs="unbounded"
-                        minOccurs="0"></xsd:element>
+                    <xsd:element name="argument" type="eFaps:msgphrase_argument" maxOccurs="unbounded" minOccurs="0"></xsd:element>
                 </xsd:sequence>
             </xsd:extension>
         </xsd:complexContent>
@@ -710,8 +689,7 @@
         <xsd:complexContent>
             <xsd:extension base="eFaps:AbstractDefinition">
                 <xsd:sequence>
-                    <xsd:element name="attribute" type="eFaps:configAttribute" maxOccurs="unbounded"
-                        minOccurs="0" />
+                    <xsd:element name="attribute" type="eFaps:configAttribute" maxOccurs="unbounded" minOccurs="0" />
                 </xsd:sequence>
             </xsd:extension>
         </xsd:complexContent>
@@ -774,11 +752,11 @@
     </xsd:complexType>
 
     <xsd:complexType name="indexField">
-        <xsd:attribute name="id"        type="xsd:string"           use="required"/>
-        <xsd:attribute name="key"       type="xsd:string"           use="required"/>
-        <xsd:attribute name="select"    type="xsd:string"           use="required"/>
-        <xsd:attribute name="type"      type="eFaps:indexFieldType" use="required"/>
-        <xsd:attribute name="transform" type="xsd:string"           use="optional" />
+        <xsd:attribute name="id" type="xsd:string" use="required" />
+        <xsd:attribute name="key" type="xsd:string" use="required" />
+        <xsd:attribute name="select" type="xsd:string" use="required" />
+        <xsd:attribute name="type" type="eFaps:indexFieldType" use="required" />
+        <xsd:attribute name="transform" type="xsd:string" use="optional" />
     </xsd:complexType>
 
     <xsd:simpleType name="indexFieldType">
@@ -835,8 +813,7 @@
                     <xsd:element name="target" type="eFaps:target" maxOccurs="1" minOccurs="0" />
                     <xsd:element name="parents" type="eFaps:parents" maxOccurs="1" minOccurs="0" />
                     <xsd:element name="trigger" type="eFaps:trigger4UI" maxOccurs="unbounded" minOccurs="0" />
-                    <xsd:element name="property" type="eFaps:property_ui-command" maxOccurs="unbounded"
-                        minOccurs="0" />
+                    <xsd:element name="property" type="eFaps:property_ui-command" maxOccurs="unbounded" minOccurs="0" />
                 </xsd:sequence>
             </xsd:extension>
         </xsd:complexContent>
@@ -888,8 +865,7 @@
                     <xsd:element name="childs" type="eFaps:childs" maxOccurs="1" minOccurs="0" />
                     <xsd:element name="parents" type="eFaps:parents" maxOccurs="1" minOccurs="0" />
                     <xsd:element name="trigger" type="eFaps:trigger4UI" maxOccurs="unbounded" minOccurs="0" />
-                    <xsd:element name="property" type="eFaps:property_ui-command" maxOccurs="unbounded"
-                        minOccurs="0" />
+                    <xsd:element name="property" type="eFaps:property_ui-command" maxOccurs="unbounded" minOccurs="0" />
                 </xsd:sequence>
             </xsd:extension>
         </xsd:complexContent>
@@ -945,8 +921,7 @@
                 <xsd:sequence>
                     <xsd:element name="status" type="xsd:boolean" maxOccurs="1" minOccurs="1" default="false" />
                     <xsd:element name="global" type="xsd:boolean" maxOccurs="1" minOccurs="1" default="true" />
-                    <xsd:element name="access" type="eFaps:definition_user-role_access" maxOccurs="1"
-                        minOccurs="0" />
+                    <xsd:element name="access" type="eFaps:definition_user-role_access" maxOccurs="1" minOccurs="0" />
                 </xsd:sequence>
             </xsd:extension>
         </xsd:complexContent>
@@ -954,10 +929,8 @@
 
     <xsd:complexType name="definition_user-role_access">
         <xsd:sequence>
-            <xsd:element name="datamodel" type="eFaps:definition_user-role_access_datamodel" maxOccurs="1"
-                minOccurs="0" />
-            <xsd:element name="userinterface" type="eFaps:definition_user-role_access_userinterface"
-                maxOccurs="1" minOccurs="0" />
+            <xsd:element name="datamodel" type="eFaps:definition_user-role_access_datamodel" maxOccurs="1" minOccurs="0" />
+            <xsd:element name="userinterface" type="eFaps:definition_user-role_access_userinterface" maxOccurs="1" minOccurs="0" />
         </xsd:sequence>
     </xsd:complexType>
 
@@ -989,8 +962,7 @@
                 <xsd:sequence>
                     <xsd:element name="target" type="eFaps:help-target" maxOccurs="1" minOccurs="0" />
                     <xsd:element name="childs" type="eFaps:childs" maxOccurs="1" minOccurs="0" />
-                    <xsd:element name="property" type="eFaps:property_ui-command" maxOccurs="unbounded"
-                        minOccurs="0" />
+                    <xsd:element name="property" type="eFaps:property_ui-command" maxOccurs="unbounded" minOccurs="0" />
                 </xsd:sequence>
             </xsd:extension>
         </xsd:complexContent>
@@ -1233,7 +1205,7 @@
         <xsd:restriction base="xsd:string">
             <xsd:enumeration value="Attribute" />
             <xsd:enumeration value="Align" />
-            <xsd:enumeration value="Aggregate"/>
+            <xsd:enumeration value="Aggregate" />
             <xsd:enumeration value="CmdAppend" />
             <xsd:enumeration value="CmdIcon" />
             <xsd:enumeration value="CmdTargetField" />
@@ -1258,9 +1230,9 @@
             <xsd:enumeration value="ModeSearch" />
             <xsd:enumeration value="ModeView" />
             <xsd:enumeration value="MsgPhrase" />
-            <xsd:enumeration value="NumberMinimum"/>
-            <xsd:enumeration value="NumberMaximum"/>
-            <xsd:enumeration value="NumberStep"/>
+            <xsd:enumeration value="NumberMinimum" />
+            <xsd:enumeration value="NumberMaximum" />
+            <xsd:enumeration value="NumberStep" />
             <xsd:enumeration value="Order" />
             <xsd:enumeration value="Phrase" />
             <xsd:enumeration value="Required" />
@@ -1301,55 +1273,55 @@
         </xsd:simpleContent>
     </xsd:complexType>
 
-     <xsd:simpleType name="property_formfield_enum">
+    <xsd:simpleType name="property_formfield_enum">
         <xsd:restriction base="xsd:string">
             <xsd:enumeration value="Attribute" />
-                <xsd:enumeration value="Align" />
-                <xsd:enumeration value="CmdAppend" />
-                <xsd:enumeration value="CmdIcon" />
-                <xsd:enumeration value="CmdTargetField" />
-                <xsd:enumeration value="CmdRenderButton" />
-                <xsd:enumeration value="Classification" />
-                <xsd:enumeration value="Columns" />
-                <xsd:enumeration value="Collapsed" />
-                <xsd:enumeration value="ColSpan" />
-                <xsd:enumeration value="FilterType" />
-                <xsd:enumeration value="FilterRequired" />
-                <xsd:enumeration value="FilterBase" />
-                <xsd:enumeration value="FilterDefault" />
-                <xsd:enumeration value="FilterAttributes" />
-                <xsd:enumeration value="FilterCmd" />
-                <xsd:enumeration value="GroupCount" />
-                <xsd:enumeration value="HideLabel" />
-                <xsd:enumeration value="HRef" />
-                <xsd:enumeration value="Label" />
-                <xsd:enumeration value="Level" />
-                <xsd:enumeration value="ModeCreate" />
-                <xsd:enumeration value="ModeEdit" />
-                <xsd:enumeration value="ModePrint" />
-                <xsd:enumeration value="ModeSearch" />
-                <xsd:enumeration value="ModeView" />
-                <xsd:enumeration value="MsgPhrase" />
-                <xsd:enumeration value="NumberMinimum"/>
-                <xsd:enumeration value="NumberMaximum"/>
-                <xsd:enumeration value="NumberStep"/>
-                <xsd:enumeration value="Order" />
-                <xsd:enumeration value="Phrase" />
-                <xsd:enumeration value="Required" />
-                <xsd:enumeration value="Rows" />
-                <xsd:enumeration value="RowSpan" />
-                <xsd:enumeration value="RadioRowLength"/>
-                <xsd:enumeration value="Select" />
-                <xsd:enumeration value="SelectAlternateOID" />
-                <xsd:enumeration value="ShowTypeIcon" />
-                <xsd:enumeration value="Target" />
-                <xsd:enumeration value="TargetStructurBrowserField" />
-                <xsd:enumeration value="TargetStructurBrowserForceExpand" />
-                <xsd:enumeration value="TargetShowCheckBoxes" />
-                <xsd:enumeration value="TargetDeactivateDnD" />
-                <xsd:enumeration value="UIProvider" />
-                <xsd:enumeration value="UIType" />
-                <xsd:enumeration value="Width" />
+            <xsd:enumeration value="Align" />
+            <xsd:enumeration value="CmdAppend" />
+            <xsd:enumeration value="CmdIcon" />
+            <xsd:enumeration value="CmdTargetField" />
+            <xsd:enumeration value="CmdRenderButton" />
+            <xsd:enumeration value="Classification" />
+            <xsd:enumeration value="Columns" />
+            <xsd:enumeration value="Collapsed" />
+            <xsd:enumeration value="ColSpan" />
+            <xsd:enumeration value="FilterType" />
+            <xsd:enumeration value="FilterRequired" />
+            <xsd:enumeration value="FilterBase" />
+            <xsd:enumeration value="FilterDefault" />
+            <xsd:enumeration value="FilterAttributes" />
+            <xsd:enumeration value="FilterCmd" />
+            <xsd:enumeration value="GroupCount" />
+            <xsd:enumeration value="HideLabel" />
+            <xsd:enumeration value="HRef" />
+            <xsd:enumeration value="Label" />
+            <xsd:enumeration value="Level" />
+            <xsd:enumeration value="ModeCreate" />
+            <xsd:enumeration value="ModeEdit" />
+            <xsd:enumeration value="ModePrint" />
+            <xsd:enumeration value="ModeSearch" />
+            <xsd:enumeration value="ModeView" />
+            <xsd:enumeration value="MsgPhrase" />
+            <xsd:enumeration value="NumberMinimum" />
+            <xsd:enumeration value="NumberMaximum" />
+            <xsd:enumeration value="NumberStep" />
+            <xsd:enumeration value="Order" />
+            <xsd:enumeration value="Phrase" />
+            <xsd:enumeration value="Required" />
+            <xsd:enumeration value="Rows" />
+            <xsd:enumeration value="RowSpan" />
+            <xsd:enumeration value="RadioRowLength" />
+            <xsd:enumeration value="Select" />
+            <xsd:enumeration value="SelectAlternateOID" />
+            <xsd:enumeration value="ShowTypeIcon" />
+            <xsd:enumeration value="Target" />
+            <xsd:enumeration value="TargetStructurBrowserField" />
+            <xsd:enumeration value="TargetStructurBrowserForceExpand" />
+            <xsd:enumeration value="TargetShowCheckBoxes" />
+            <xsd:enumeration value="TargetDeactivateDnD" />
+            <xsd:enumeration value="UIProvider" />
+            <xsd:enumeration value="UIType" />
+            <xsd:enumeration value="Width" />
         </xsd:restriction>
     </xsd:simpleType>
 
@@ -1389,7 +1361,7 @@
     <xsd:simpleType name="property_ui-form_enum">
         <xsd:restriction base="xsd:string">
             <xsd:enumeration value="Weight" />
-            <xsd:enumeration value="MultiPart"/>
+            <xsd:enumeration value="MultiPart" />
         </xsd:restriction>
     </xsd:simpleType>
 
@@ -1429,7 +1401,7 @@
             <xsd:enumeration value="TargetStructurBrowserField" />
             <xsd:enumeration value="TargetTableSortKey" />
             <xsd:enumeration value="TargetDeactivateDnD" />
-            <xsd:enumeration value="TargetTableType"/>
+            <xsd:enumeration value="TargetTableType" />
             <xsd:enumeration value="WindowHeight" />
             <xsd:enumeration value="WindowWidth" />
         </xsd:restriction>
@@ -1452,8 +1424,7 @@
 
     <xsd:complexType name="storeResource">
         <xsd:sequence>
-            <xsd:element name="property" type="eFaps:property_storeResource" maxOccurs="unbounded"
-                minOccurs="0" />
+            <xsd:element name="property" type="eFaps:property_storeResource" maxOccurs="unbounded" minOccurs="0" />
         </xsd:sequence>
         <xsd:attribute name="class" use="required" />
         <xsd:attribute name="compress" use="required" />
@@ -1656,15 +1627,15 @@
     </xsd:complexType>
 
     <xsd:complexType name="uoM">
-    <xsd:sequence>
-        <xsd:element name="base" type="xsd:string" maxOccurs="1" minOccurs="0" />
-        <xsd:element name="symbol" type="xsd:string" maxOccurs="1" minOccurs="1" />
-        <xsd:element name="name" type="xsd:string" maxOccurs="1" minOccurs="0" />
-        <xsd:element name="code" type="xsd:string" maxOccurs="1" minOccurs="0" />
-        <xsd:element name="numerator" type="xsd:string" maxOccurs="1" minOccurs="1" />
-        <xsd:element name="denominator" type="xsd:string" maxOccurs="1" minOccurs="1" />
-    </xsd:sequence>
-</xsd:complexType>
+        <xsd:sequence>
+            <xsd:element name="base" type="xsd:string" maxOccurs="1" minOccurs="0" />
+            <xsd:element name="symbol" type="xsd:string" maxOccurs="1" minOccurs="1" />
+            <xsd:element name="name" type="xsd:string" maxOccurs="1" minOccurs="0" />
+            <xsd:element name="code" type="xsd:string" maxOccurs="1" minOccurs="0" />
+            <xsd:element name="numerator" type="xsd:string" maxOccurs="1" minOccurs="1" />
+            <xsd:element name="denominator" type="xsd:string" maxOccurs="1" minOccurs="1" />
+        </xsd:sequence>
+    </xsd:complexType>
 
     <xsd:complexType name="validate">
         <xsd:sequence>
