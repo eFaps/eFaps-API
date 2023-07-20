@@ -115,6 +115,7 @@
                     <sources>
                         <source>src/main/resources/eFaps.xsd</source>
                     </sources>
+                    <extension>true</extension>
                 </configuration>
 
                 <!--
