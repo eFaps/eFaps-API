@@ -322,7 +322,19 @@
             </xsd:complexContent>
         </xsd:complexType>
     </xsd:element>
-
+    
+     <xsd:element name="ui-module">
+        <xsd:complexType>
+            <xsd:complexContent>
+                <xsd:extension base="eFaps:AbstractBase">
+                    <xsd:sequence>
+                        <xsd:element name="definition" type="eFaps:definition_ui-module" maxOccurs="unbounded" minOccurs="1" />
+                    </xsd:sequence>
+                </xsd:extension>
+            </xsd:complexContent>
+        </xsd:complexType>
+    </xsd:element>
+    
     <xsd:element name="ui-search">
         <xsd:complexType>
             <xsd:complexContent>
@@ -1463,6 +1475,7 @@
     <xsd:complexType name="target">
         <xsd:sequence>
             <xsd:element name="menu" type="xsd:string" maxOccurs="1" minOccurs="0" />
+            <xsd:element name="module" type="xsd:string" maxOccurs="1" minOccurs="0" />
             <xsd:element name="form" type="xsd:string" maxOccurs="1" minOccurs="0" />
             <xsd:element name="search" type="xsd:string" maxOccurs="1" minOccurs="0" />
             <xsd:element name="table" type="xsd:string" maxOccurs="1" minOccurs="0" />
