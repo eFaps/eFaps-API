@@ -40,5 +40,7 @@ public enum UIType
     /** Render a file upload input. */
     UPLOAD,
     /** Render a file upload input enabling multiple uploads. */
-    UPLOADMULTIPLE;
+    UPLOADMULTIPLE,
+    DATE,
+    DATETIME;
 }
