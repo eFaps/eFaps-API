@@ -322,7 +322,7 @@
             </xsd:complexContent>
         </xsd:complexType>
     </xsd:element>
-    
+
      <xsd:element name="ui-module">
         <xsd:complexType>
             <xsd:complexContent>
@@ -334,7 +334,7 @@
             </xsd:complexContent>
         </xsd:complexType>
     </xsd:element>
-    
+
     <xsd:element name="ui-search">
         <xsd:complexType>
             <xsd:complexContent>
@@ -1013,6 +1013,7 @@
             <xsd:element name="trigger" type="eFaps:trigger4UI" maxOccurs="unbounded" minOccurs="0" />
             <xsd:element name="table" type="xsd:string" maxOccurs="1" minOccurs="0" />
             <xsd:element name="evaluate" type="eFaps:evaluate" maxOccurs="1" minOccurs="0" />
+            <xsd:element name="ui-module" type="xsd:string" maxOccurs="1" minOccurs="0" />
         </xsd:sequence>
         <xsd:attribute name="name" type="xsd:string" use="required" />
         <xsd:attribute name="character" use="optional">
