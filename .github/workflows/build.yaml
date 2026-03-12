@@ -8,7 +8,7 @@ on:
   pull_request:
     branches: [ master ]
   repository_dispatch:
-    types: [dependency-event]
+    types: [ dependency-event ]
   workflow_dispatch:
 
 jobs:
@@ -38,5 +38,6 @@ jobs:
       - name: Run Tests
         run: mvn test -s mySettings.xml -B
       - name: Deploy
+        if: ${{ github.event_name != 'pull_request' }}
         run: mvn deploy -DskipTests -s mySettings.xml
 
