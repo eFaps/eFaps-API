@@ -1623,7 +1623,7 @@
                     <xsd:enumeration value="UI_FIELD_ALTINST" />
                     <xsd:enumeration value="UI_FIELD_VALUE" />
                     <xsd:enumeration value="UI_FIELD_UPDATE" />
-                    <xsd:enumeration value="UI_TABLE_EVALUATE" />
+                    <xsd:enumeration value="UI_CONTENT_EVALUATE" />
                     <xsd:enumeration value="UI_VALIDATE" />
                 </xsd:restriction>
             </xsd:simpleType>
